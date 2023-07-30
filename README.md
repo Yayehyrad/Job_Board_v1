@@ -1,2 +1,4 @@
 # Job_Board_v1
-Project
+Job board project 
+ - listing and
+ - filtering 

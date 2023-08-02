@@ -38,6 +38,14 @@ const userSchima = new mongoose.Schema({
         minlenght:6
     },
  
+    role:{
+        type:String,
+        required : true,
+        trim:true,
+        default : "user"
+
+    },
+ 
     tokens:[{
         token:{
             type:String,

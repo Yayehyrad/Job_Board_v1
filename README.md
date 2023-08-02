@@ -1,2 +1,6 @@
 # Job_Board_v1
-Project NEW 
+ 
+Job board project 
+ - listing and
+ - filtering 
+ 

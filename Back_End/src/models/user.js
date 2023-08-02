@@ -18,7 +18,7 @@ const userSchima = new mongoose.Schema({
         lowercase:true,
         Validate(value){
             if (!vaidator.isEmail(value)){
-                throw new Error("nt email")
+                throw new Error("not email")
             }
         }
     },
@@ -37,14 +37,14 @@ const userSchima = new mongoose.Schema({
         trim:true,
         minlenght:6
     },
-  
+ 
     tokens:[{
         token:{
             type:String,
             required:true
         }
     }]
-})
+} , {timestamps : true})
 
 userSchima.virtual('tasks' , {
     ref:'Task',

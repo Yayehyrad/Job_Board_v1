@@ -9,7 +9,7 @@ const userSchima = new mongoose.Schema({
         type:String,
         required:true,
         trim:true  
-    },
+    }, 
     email : {
         type:String,
         required:true ,
@@ -22,6 +22,12 @@ const userSchima = new mongoose.Schema({
             }
         }
     },
+    role : {
+        type:String ,
+        required:true ,
+        trim:true,
+        lowercase:true,
+    },
     age : {
         type:Number
     },
@@ -31,6 +37,7 @@ const userSchima = new mongoose.Schema({
         trim:true,
         minlenght:6
     },
+  
     tokens:[{
         token:{
             type:String,

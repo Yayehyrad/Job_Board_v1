@@ -33,7 +33,10 @@ const userSchima = new mongoose.Schema({
     },
     role:{
         type:String,
+        required : true,
+        trim:true,
         default : "user"
+
     },
     tokens:[{
         token:{

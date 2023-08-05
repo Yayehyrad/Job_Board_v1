@@ -13,6 +13,12 @@ const Task  = mongoose.model('Task' ,
         type : mongoose.Schema.Types.ObjectId,
         required : true,
         ref:'User'
+    },
+    job_location:{
+        type:String,
+    },
+    job_type:{
+        type : String, 
     }
 }
 )
